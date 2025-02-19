@@ -1,75 +1,102 @@
-# Django API with Django Rest Framework
+🔗 Django API with Django Rest Framework (DRF)
+This project is a Django API built with Django Rest Framework (DRF) that provides user management, custom roles, social authentication, and password reset functionality.
 
-This project is a Django API built with Django Rest Framework (DRF) that supports user management with custom roles, social authentication, and password reset functionality.
+🌟 Features
+✅ Custom User Roles:
 
-## Features
+Admin
+Coach
+Agent
+Football Player
+✅ User Registration & Authentication:
 
-- **Custom User Roles**: Users can have one of the following roles:
-  - Admin
-  - Coach
-  - Agent
-  - Football Player
+Standard signup & login
+Social authentication (Google, Facebook)
+✅ Password Management:
 
-- **User Registration**:
-  - Standard signup
-  - Social signup via Google and Facebook
+Password reset functionality
+✅ Security & Authentication:
 
-- **User Authentication**:
-  - Standard login
-  - Social login via Google and Facebook
+JWT-based authentication
+Token refresh mechanism
+✅ RESTful API Endpoints:
 
-- **Password Management**:
-  - Password reset functionality
-
-## Requirements
-
-- Python 3.x
-- Django 3.x or 4.x
-- Django Rest Framework
-- Django Allauth (for social authentication)
-- dj-rest-auth (for RESTful authentication)
-
-## Installation
-
-1. **Clone the Repository**:
-
-   ```bash
-   git clone https://github.com/sirawtadesse/Django-Rest-Framework.git
-   cd your-repo-name
-   
-   python -m venv venv
+User management
+Role-based access control
+Authentication & authorization
+🚀 Tech Stack
+Backend: Django, Django Rest Framework
+Authentication: Django Allauth, dj-rest-auth
+Database: PostgreSQL (or any preferred database)
+Social Login: Google & Facebook OAuth
+Deployment: Docker, AWS, DigitalOcean
+⚡ Installation & Setup
+1️⃣ Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/sirawtadesse/Django-Rest-Framework.git
+cd Django-Rest-Framework
+2️⃣ Set Up Virtual Environment
+bash
+Copy
+Edit
+python -m venv venv  
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-
+3️⃣ Install Dependencies
+bash
+Copy
+Edit
 pip install -r requirements.txt
-
+4️⃣ Apply Migrations
+bash
+Copy
+Edit
 python manage.py migrate
-
+5️⃣ Create Superuser
+bash
+Copy
+Edit
 python manage.py createsuperuser
-
+6️⃣ Run the Development Server
+bash
+Copy
+Edit
 python manage.py runserver
+Access API at http://127.0.0.1:8000
 
-Technologies Used
-Django
-Django Rest Framework
-Django Allauth
-dj-rest-auth
-PostgreSQL (or any other database you prefer)
-Contributing
-Fork the repository.
-Create a new branch (git checkout -b feature/YourFeature).
-Make your changes and commit them (git commit -m 'Add some feature').
-Push to the branch (git push origin feature/YourFeature).
-Create a new Pull Request.
+🛠 API Endpoints
+Endpoint	Method	Description
+/api/auth/register/	POST	User registration
+/api/auth/login/	POST	User login
+/api/auth/logout/	POST	Logout
+/api/auth/password/reset/	POST	Password reset
+/api/users/	GET	List all users
+/api/users/{id}/	GET	Get user details
+📜 Contribution Guide
+💡 We welcome contributions! Follow these steps to contribute:
 
-Acknowledgments
-Django Rest Framework
-Django Allauth
-dj-rest-auth
+Fork the repository
+Create a new branch
+bash
+Copy
+Edit
+git checkout -b feature/YourFeature
+Make your changes and commit
+bash
+Copy
+Edit
+git commit -m "Add new feature"
+Push to GitHub
+bash
+Copy
+Edit
+git push origin feature/YourFeature
+Create a Pull Request (PR)
+📬 Contact & Support
+📍 Developer: Siraw Tadesse
+📧 Email: sirawbizutadesse21@gmail.com
+💼 GitHub: github.com/sirawtadesse
 
-### Customizing the README
+⭐ If you find this project useful, give it a star! 🚀
 
-- Replace placeholders like `yourusername` and `your-repo-name` with your actual GitHub username and repository name.
-- Adjust the list of technologies used if you incorporate additional libraries or tools.
-- Provide any additional instructions or details specific to your project as necessary.
-
-This README provides a clear and structured overview of your project, making it easy for users and contributors to understand how to get started and use the API effectively.
